@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
 
     this.backService.getOk().subscribe(res => {
-      alert(res.status);
+      document.write(res.status.toString());
     });
 
   }
