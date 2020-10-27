@@ -1,0 +1,3 @@
+resources:
+  - angular-example-deployment.yaml
+  - angular-example-service.yaml

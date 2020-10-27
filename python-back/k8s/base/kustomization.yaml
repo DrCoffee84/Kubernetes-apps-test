@@ -1,0 +1,3 @@
+resources:
+  - python-example-deployment.yaml
+  - python-example-service.yaml
