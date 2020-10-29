@@ -1,21 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
-  metadata:
-    name: python-example-deployment
-    labels:
+metadata:
+  name: python-example-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
       app: python-example
+  template:
+    metadata:
+      labels:
+        app: python-example
     spec:
-      replicas: 3
-      selector:
-        matchLabels:
-          app: python-example
-      template:
-        metadata:
-          labels:
-            app: python-example
-        spec:
-          containers:
-            - name: python-example
-              image: dboullon/python-example
-              ports:
-                - containerPort: 5000
+      containers:
+        - name: python-example
+          image: dboullon/python-example
+          ports:
+            - containerPort: 80

@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: angular-example-configmap
+data:
+   config.js:|
+    PYTHON_EXAMPLE_URL='http://localhost:5000'
