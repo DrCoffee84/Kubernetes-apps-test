@@ -16,4 +16,4 @@ spec:
         - name: python-example
           image: dboullon/python-example
           ports:
-            - containerPort: 80
+            - containerPort: 5000

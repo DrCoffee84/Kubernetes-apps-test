@@ -10,7 +10,7 @@ export class BackService {
     constructor(protected http: HttpClient) { }
 
     getOk(): Observable<responseOk> {
-        return this.http.get<responseOk>('http://python-example-service' + "/test");
+        return this.http.get<responseOk>(environment.apiUrl + "/test");
     }
 
 }

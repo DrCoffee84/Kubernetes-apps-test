@@ -2,7 +2,7 @@
 FROM node:alpine AS angular-front-build
 WORKDIR /app
 COPY . .
-RUN npm ci && npm run build
+RUN npm ci && npm run build --prod
 
 # stage 2
 FROM nginx:alpine
