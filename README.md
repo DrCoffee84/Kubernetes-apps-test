@@ -1,2 +1,2 @@
 # devops
-Dani lindo
+Aplicaciones para jugar con kubernetes!
